@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable List</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <ul id="list">
+      {% for store in stores %}
+        <li>{{store.name}} --- {{store.productType}}</li>
+       {% endfor %}
+        <!-- Добавьте больше элементов списка по мере необходимости -->
+    </ul>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
